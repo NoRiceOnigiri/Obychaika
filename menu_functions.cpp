@@ -25,6 +25,6 @@ Menu::MenuItem* Functions::main_play_football(Menu::MenuItem* current) {
 }
 
 Menu::MenuItem* Functions::main_study(Menu::MenuItem* current) {
-    std::cout << "Учимся..." << std::endl;
-    return current;
+    std::cout << "Учимся ... поучились." << std::endl;
+    return current->parent;
 }
