@@ -3,11 +3,11 @@ namespace Menu {
     struct MenuItem
     {
         const char* const title;
-        Menu::MenuItem* (*func)(MenuItem*);
+        const Menu::MenuItem* (*func)(const MenuItem* current);
 
-        Menu::MenuItem* parent;
+        const Menu::MenuItem* const parent;
 
-        MenuItem** options;
+        const MenuItem* const *options;
         const int options_count;
     };
 }

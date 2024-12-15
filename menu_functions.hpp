@@ -1,9 +1,9 @@
 #pragma once
 
 namespace Functions {
-    Menu::MenuItem* print_options(Menu::MenuItem* current);
+    const Menu::MenuItem* print_options(const Menu::MenuItem* current);
 
-    Menu::MenuItem* main_play_football(Menu::MenuItem* current);
+    const Menu::MenuItem* main_play_football(const Menu::MenuItem* current);
 
-    Menu::MenuItem* main_study(Menu::MenuItem* current);
+    const Menu::MenuItem* main_study(const Menu::MenuItem* current);
 }

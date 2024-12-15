@@ -3,7 +3,7 @@
 #include "menu.hpp"
 #include "menu_functions.hpp"
 
-Menu::MenuItem* Functions::print_options(Menu::MenuItem* current) {
+const Menu::MenuItem* Functions::print_options(const Menu::MenuItem* current) {
 
     for (int i = 1; i < current->options_count; i++)
         std::cout << current->options[i]->title << std::endl;
@@ -20,11 +20,11 @@ Menu::MenuItem* Functions::print_options(Menu::MenuItem* current) {
     return current->options[answer];
 }
 
-Menu::MenuItem* Functions::main_play_football(Menu::MenuItem* current) { 
+const Menu::MenuItem* Functions::main_play_football(const Menu::MenuItem* current) { 
     std::exit(0);
 }
 
-Menu::MenuItem* Functions::main_study(Menu::MenuItem* current) {
+const Menu::MenuItem* Functions::main_study(const Menu::MenuItem* current) {
     std::cout << "Учимся ... поучились." << std::endl;
     return current->parent;
 }
