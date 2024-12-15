@@ -3,6 +3,9 @@ namespace Menu {
     struct MenuItem
     {
         const char* const title;
-        void (*func)();
+        Menu::MenuItem* (*func)(MenuItem*);
+
+        MenuItem** options;
+        const int options_count;
     };
 }
