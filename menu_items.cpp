@@ -50,8 +50,8 @@ const Menu::MenuItem Items::BACK_TO_MAIN_MENU = // 2 level -> 1 level
 const Menu::MenuItem Items::DATA_BASES =
  {"1. Базы данных.", Functions::data_bases, &Items::OTHER_TECHNOLOGIES};
 const Menu::MenuItem Items::MULTITHREAD_PROGRAMMING =
- {"2. Мультипотоковое программирование.", Functions::multithread_programming, &Items::OTHER_TECHNOLOGIES};
+ {"2. Мультипоточное программирование.", Functions::multithread_programming, &Items::OTHER_TECHNOLOGIES};
 const Menu::MenuItem Items::NETWORK_TECHNOLOGIES =
  {"3. Сетевые технологии.", Functions::network_technologies, &Items::OTHER_TECHNOLOGIES};
 const Menu::MenuItem Items::BACK_TO_PREVIOUS_MENU = // 3 level -> 2 level
- {"0. Выйти в главное меню.", Functions::go_back, &Items::OTHER_TECHNOLOGIES}; 
+ {"0. Выйти в предыдущее меню.", Functions::go_back, &Items::OTHER_TECHNOLOGIES}; 

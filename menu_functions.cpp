@@ -51,7 +51,7 @@ const Menu::MenuItem* Functions::data_bases(const Menu::MenuItem* current){
     return current->parent;
 }
 const Menu::MenuItem* Functions::multithread_programming(const Menu::MenuItem* current){
-    std::cout << "Вот и помультитредили..." << std::endl;
+    std::cout << "Вот и помультипоточили..." << std::endl;
 
     std::cout << std::endl;
     return current->parent;
